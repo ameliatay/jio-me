@@ -15,7 +15,7 @@ app.use(express.json())
 
 mongoose.connect('mongodb+srv://ameliataylijia:test123@cluster0.hkcpq4w.mongodb.net/letsgo?retryWrites=true&w=majority')
 
-const EventRoute = require('../routes/Event')
+const EventRoute = require('./routes/Event')
 app.use('/event',EventRoute)
 
 app.listen(3001, console.log('Server is running on PORT 3001'))
