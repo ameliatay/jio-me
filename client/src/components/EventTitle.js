@@ -7,8 +7,7 @@ const EventTitle = () => {
     const handleChange = (e) => setEventTitle(e.target.value)
 
     const handleCreateEvent = () => {
-        console.log(eventTitle)
-        fetch('https://letsgox.vercel.app/event', {
+        fetch('https://letsgox.vercel.app/event/', {
             method: 'POST',
             body: JSON.stringify({eventTitle: eventTitle}),
             headers: {
